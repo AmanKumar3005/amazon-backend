@@ -10,7 +10,7 @@ const Orders = require("./Orders");
 // );
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // Middlewares
 app.use(express.json());
